@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "name": "Student Research",
+      "image": "https://i.ibb.co/L0WKsmt/1.jpg",
+      "price": "$19.99",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "button": "Add to Cart"
+    },
+    {
+      "id": 2,
+      "name": "Sample Study Topics",
+      "image": "https://i.ibb.co/7tM5thk/2.jpg",
+      "price": "$24.99",
+      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "button": "Buy Now"
+    },
+    {
+      "id": 3,
+      "name": "Hands-on Research & Analysis",
+      "image": "https://i.ibb.co/C9gLwkr/3.jpg",
+      "price": "$14.99",
+      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+      "button": "Add to Wishlist"
+    },
+    {
+      "id": 4,
+      "name": "This program is designed",
+      "image": "https://i.ibb.co/7JD1KpD/4.jpg",
+      "price": "$29.99",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+      "button": "Buy Now"
+    },
+    {
+      "id": 5,
+      "name": "Instead of learning from a textbook",
+      "image": "https://i.ibb.co/4FKS4pJ/5.jpg",
+      "price": "$9.99",
+      "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.",
+      "button": "Add to Cart"
+    },
+    {
+      "id": 6,
+      "name": "Some of our past research mentors",
+      "image": "https://i.ibb.co/yQhgP46/7.jpg",
+      "price": "$34.99",
+      "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+      "button": "Buy Now"
+    }
+  ]
+  
