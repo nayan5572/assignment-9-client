@@ -1,11 +1,11 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logoImg from '../../assets/education.png'
 
 const NavBar = () => {
 
     const navLink = <>
 
-        <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink activeClassName="active:text-orange-500" to="/">Home</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>
         <li><NavLink to="/service">Service</NavLink></li>
         <li><NavLink to="/blog">Blog</NavLink></li>
@@ -38,8 +38,12 @@ const NavBar = () => {
                 </div>
                 <div className="navbar-end">
                     <div className="btn-group">
-                        <button className="btn bg-orange-500 text-white hover:bg-orange-500">Login</button>
-                        <button className="btn bg-orange-500 text-white hover:bg-orange-500">Register</button>
+                        <Link to="/login">
+                            <button className="btn bg-orange-500 text-white hover:bg-orange-500">Login</button>
+                        </Link>
+                        <Link to="/registration">
+                            <button className="btn bg-orange-500 text-white hover:bg-orange-500">Register</button>
+                        </Link>
                     </div>
                 </div>
             </div>
