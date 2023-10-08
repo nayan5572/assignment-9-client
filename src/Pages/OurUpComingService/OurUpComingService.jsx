@@ -1,13 +1,12 @@
 import { useLoaderData, useParams } from "react-router-dom";
 
-const ServiceDetails = () => {
+const OurUpComingService = () => {
 
-    const service = useLoaderData();
+    const upData = useLoaderData();
 
     const { id } = useParams();
     const idInt = parseInt(id);
-    const item = service.find(item => item.id === idInt)
-
+    const item = upData.find(item => item.id === idInt);
 
     return (
         <div>
@@ -20,7 +19,4 @@ const ServiceDetails = () => {
     );
 };
 
-export default ServiceDetails;
-
-
-
+export default OurUpComingService;

@@ -9,6 +9,8 @@ import Login from "../Pages/Login/Login";
 import Registration from "../Pages/Registration/Registration";
 import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 import HomeData from './../Pages/Home/HomeData';
+import LatestService from "../Pages/LatestService/LatestService";
+import OurUpComingService from "../Pages/OurUpComingService/OurUpComingService";
 
 
 
@@ -54,6 +56,16 @@ const router = createBrowserRouter([
         path: "/serviceDetail/:id",
         element: <ServiceDetails></ServiceDetails>,
         loader:()=> fetch('myData.json')
+      },
+      {
+        path: "/latestService/:id",
+        element: <LatestService></LatestService>,
+        loader:()=> fetch('news.json')
+      },
+      {
+        path: "/ourUpComingService/:id",
+        element: <OurUpComingService></OurUpComingService>,
+        loader: ()=> fetch('upcoming.json')
       }
     ]
   },

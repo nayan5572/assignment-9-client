@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 
 const UpcomingService = ({ myUpcoming }) => {
+    const { id } = myUpcoming;
     return (
         <div>
             <div className="hero bg-base-100 shadow-xl rounded-xl">
@@ -8,7 +10,10 @@ const UpcomingService = ({ myUpcoming }) => {
                     <div className="pl-4">
                         <h1 className="text-3xl font-bold">{myUpcoming.title}</h1>
                         <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button className="btn btn-outline text-orange-500 hover:bg-orange-500 hover:text-white hover:border-0">Read More</button>
+
+                        <Link to={`/ourUpComingService/${id}`}>
+                            <button className="btn btn-outline text-orange-500 hover:bg-orange-500 hover:text-white hover:border-0">Read More</button>
+                        </Link>
                     </div>
                 </div>
             </div>

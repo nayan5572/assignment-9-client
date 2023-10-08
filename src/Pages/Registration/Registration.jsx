@@ -18,7 +18,13 @@ const Registration = () => {
                         <label className="label">
                             <span className="label-text">Name</span>
                         </label>
-                        <input type="text" name="name" placeholder="Your Name" className="input input-bordered" required />
+                        <input type="text" name="name" placeholder="Your Full Name" className="input input-bordered" required />
+                    </div>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Photo</span>
+                        </label>
+                        <input type="text" name="photo" placeholder="Your Photo Url" className="input input-bordered" required />
                     </div>
                     <div className="form-control">
                         <label className="label">
