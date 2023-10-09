@@ -12,6 +12,7 @@ import HomeData from './../Pages/Home/HomeData';
 import LatestService from "../Pages/LatestService/LatestService";
 import OurUpComingService from "../Pages/OurUpComingService/OurUpComingService";
 import PrivateRouter from "../Provider/PrivateRouter";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 
 
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
