@@ -1,10 +1,12 @@
 # Event-Management
 
-## [ Private Repo Link](https://event-management-28819.web.app/)
+## [ Private Repo Link](https://classroom.github.com/a/ehOGNGkI)
 
 Click here for the private repo: [https://classroom.github.com/a/ehOGNGkI](https://classroom.github.com/a/ehOGNGkI)
 
 
+
+## [Visit my live website](https://event-management-28819.web.app/)
 
 1.First I created the layout of the web site.
 Ans: First created a layout component.  And I have created many pages in it.
