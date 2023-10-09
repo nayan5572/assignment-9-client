@@ -35,11 +35,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/service",
-        element: <Service></Service>
+        element: <PrivateRouter><Service></Service></PrivateRouter>
       },
       {
         path: "/blog",
-        element: <Blog></Blog>
+        element: <PrivateRouter><Blog></Blog></PrivateRouter>
       },
       {
         path: "/contact",
