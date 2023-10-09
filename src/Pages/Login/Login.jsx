@@ -1,6 +1,6 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -10,8 +10,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 
-const Login = () => {
 
+const Login = () => {
 
 
     const { signInUser, googleLogin } = useContext(AuthContext);

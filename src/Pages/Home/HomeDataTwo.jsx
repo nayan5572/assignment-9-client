@@ -1,14 +1,21 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types"; // Import PropTypes
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+
 
 
 
 const HomeDataTwo = ({ myDena }) => {
-
     const { id, description } = myDena;
 
+    useEffect(() => {
+        AOS.init({duration: 2000})
+    }, [])
+
     return (
-        <div className="card card-compact w-96 bg-base-100 shadow-xl mt-20">
+        <div className="card card-compact w-96 bg-base-100 shadow-xl mt-20" data-AOS = "fade-up">
             <figure><img src={myDena.image} alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title text-2xl">{myDena.name}</h2>
