@@ -56,17 +56,17 @@ const router = createBrowserRouter([
       {
         path: "/serviceDetail/:id",
         element: <PrivateRouter><ServiceDetails></ServiceDetails></PrivateRouter>,
-        loader:()=> fetch('myData.json')
+        loader: () => fetch('myData.json')
       },
       {
         path: "/latestService/:id",
         element: <PrivateRouter><LatestService></LatestService></PrivateRouter>,
-        loader:()=> fetch('news.json')
+        loader: () => fetch('news.json')
       },
       {
         path: "/ourUpComingService/:id",
         element: <PrivateRouter><OurUpComingService></OurUpComingService></PrivateRouter>,
-        loader: ()=> fetch('upcoming.json')
+        loader: () => fetch('upcoming.json')
       }
     ]
   },
