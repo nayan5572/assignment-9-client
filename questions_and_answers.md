@@ -15,13 +15,14 @@ console.log(greetign);
 - B: `ReferenceError: greetign is not defined`
 - C: `undefined`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>A</b></summary>
 <p>
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
-
+<i>The variable we have taken is undefined.
+  Then I declared the object.  It has no value.
+    Finally the output is empty object.</i>
 </p>
 </details>
 
@@ -40,12 +41,14 @@ sum(1, "2");
 - C: `"12"`
 - D: `3`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>C</b></summary>
 <p>
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>We first created a function.  And declared two parameters.
+  I have returned two parameters.  Now I call the function when number 1 and string 2 are added.  It was 12 then.
+    Actually here is 12 but 2 string</i>
 
 </p>
 </details>
@@ -66,12 +69,12 @@ console.log(food);
 - C: `['🍝', '🍕', '🍫', '🥑', '🍔']`
 - D: `ReferenceError`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>A</b></summary>
 <p>
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>There are three arrays.  Then I declared a variable called info.  And took a favorite food [0].  And changed the first value of the array.  And lastly we console.log the food.  So output is the first array coming.</i>
 
 </p>
 </details>
@@ -91,12 +94,12 @@ console.log(sayHi());
 - C: `Hi there, null`
 - D: `ReferenceError`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>B</b></summary>
 <p>
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>First I declared a function and took a name as a parameter.  I have returned that name.  When parameter is called but no value is given.  So Undefined is coming as output.</i>
 
 </p>
 </details>
@@ -119,12 +122,12 @@ console.log(count);
 - C: 3
 - D: 4
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>C</b></summary>
 <p>
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
+<i>First I declared a variable called count.  whose value is 0.  Then I declared an array called nums.  Declare the forEach method of nums.  whose parameter name is num.  If num is true.  Then the value of count will increase by 1.</i>
 
 </p>
 </details>
