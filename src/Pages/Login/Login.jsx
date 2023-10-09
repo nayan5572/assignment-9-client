@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
@@ -12,9 +12,14 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
 
-    const { signInUser } = useContext(AuthContext)
 
-    const [signInError, setSignInError] = useState('')
+
+    const { signInUser, googleLogin } = useContext(AuthContext);
+
+    const [signInError, setSignInError] = useState('');
+
+    const location = useLocation();
+    const naviGate = useNavigate();
 
 
 
@@ -32,6 +37,9 @@ const Login = () => {
         signInUser(email, password)
             .then(result => {
                 console.log(result.user)
+
+                // navigate after login
+                naviGate(location?.state ? location.state : '/');
             })
             .catch(error => {
                 console.error(error);
@@ -45,6 +53,16 @@ const Login = () => {
 
     }
 
+    // SignIn With Google
+    const handleLoginGoogle = () => {
+        googleLogin()
+            .then(result => {
+                console.log(result.user)
+            })
+            .catch(error => {
+                console.error(error)
+            })
+    }
 
 
     return (
@@ -74,7 +92,7 @@ const Login = () => {
                         <button className="btn text-white hover:border-orange-500 bg-orange-500 hover:bg-white hover:text-orange-500">Login</button>
                         <ToastContainer />
                         <h2 className="text-center my-4 text-2xl">OR</h2>
-                        <button className="btn btn-outline text-orange-500 hover:bg-orange-500 hover:border-0"><FaGoogle className="text-2xl"></FaGoogle> Continue With Google</button>
+                        <button onClick={handleLoginGoogle} className="btn btn-outline text-orange-500 hover:bg-orange-500 hover:border-0"><FaGoogle className="text-2xl"></FaGoogle> Continue With Google</button>
                     </div>
                 </form>
                 {

@@ -48,8 +48,9 @@ const Registration = () => {
                     displayName: name,
                     photoURL: photo
                 })
-                    .then(() => console.log("Update Profile"))
-                    .catch(error => console.error(error))
+                window.location.reload(true)
+                .then(() => console.log("Update Profile"))
+                .catch(error => console.error(error))
 
 
             })

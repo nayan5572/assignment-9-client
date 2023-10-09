@@ -11,6 +11,7 @@ import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 import HomeData from './../Pages/Home/HomeData';
 import LatestService from "../Pages/LatestService/LatestService";
 import OurUpComingService from "../Pages/OurUpComingService/OurUpComingService";
+import PrivateRouter from "../Provider/PrivateRouter";
 
 
 
@@ -54,17 +55,17 @@ const router = createBrowserRouter([
       },
       {
         path: "/serviceDetail/:id",
-        element: <ServiceDetails></ServiceDetails>,
+        element: <PrivateRouter><ServiceDetails></ServiceDetails></PrivateRouter>,
         loader:()=> fetch('myData.json')
       },
       {
         path: "/latestService/:id",
-        element: <LatestService></LatestService>,
+        element: <PrivateRouter><LatestService></LatestService></PrivateRouter>,
         loader:()=> fetch('news.json')
       },
       {
         path: "/ourUpComingService/:id",
-        element: <OurUpComingService></OurUpComingService>,
+        element: <PrivateRouter><OurUpComingService></OurUpComingService></PrivateRouter>,
         loader: ()=> fetch('upcoming.json')
       }
     ]

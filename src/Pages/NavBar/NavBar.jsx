@@ -47,10 +47,11 @@ const handleLogOut = () => {
                 </div>
                 <div className="navbar-end">
                     {
-                        user ? <>
+                        user ? 
+                        <>
                             <span className="mr-4">{user.displayName}</span>
                             <span className="mr-8"><img className="rounded-full w-20" src={user.photoURL} alt="" /></span>
-                            <a onClick={handleLogOut} className="btn bg-orange-500 text-white hover:bg-orange-500" href="">Sign Out</a>
+                            <a onClick={handleLogOut} className="btn bg-orange-500 text-white hover:bg-orange-500">Sign Out</a>
                         </>
                             :
                             <div className="btn-group">
